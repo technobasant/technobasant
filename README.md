@@ -13,7 +13,7 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 - [streaming-platform](https://github.com/technobasant/streaming-platform) — Kafka, Flink, ClickHouse and Iceberg with Avro contracts and a freshness SLO; every event counted at every layer, exactly-once through broker kills, TaskManager kills and stalls. · [case study](https://basantbhattarai.com.np/work/streaming-platform/)
 - [spark-sql-kinesis](https://github.com/technobasant/spark-sql-kinesis) [![Maven Central](https://img.shields.io/maven-central/v/io.github.technobasant/spark-sql-kinesis_2.13?label=maven%20central)](https://central.sonatype.com/artifact/io.github.technobasant/spark-sql-kinesis_2.13) — Kinesis source and sink for Spark 4.2 Structured Streaming on AWS SDK v2. Upgrades in place: the checkpoint format is byte-identical, so no drain. · [case study](https://basantbhattarai.com.np/work/spark-sql-kinesis/)
 - [dataset-registry](https://github.com/technobasant/dataset-registry) — ownership before consumption, as a product: owners, freshness SLOs, versioned JSON Schema contracts, OpenLineage lineage, and breaking changes that wait for consumer acknowledgement. Go, PostgreSQL, Next.js. · [case study](https://basantbhattarai.com.np/work/dataset-registry/)
-- [data-stack-lab](https://github.com/technobasant/data-stack-lab) — one synthetic SaaS business built tool by tool, each module scored against the data's ground truth. First: a dbt star schema whose Type 2 dimension, built from monthly snapshots, kept all 5,048 invoices on the plan they billed; Type 1 moved 15.1% of revenue. Runs on dbt Core and dbt v2. · [case study](https://basantbhattarai.com.np/work/data-stack-lab/)
+- [data-stack-lab](https://github.com/technobasant/data-stack-lab) — hands-on data engineering projects, one per tool, on one synthetic SaaS dataset, each checked in CI. dbt: a Type 2 dimension kept all 5,048 invoices on the plan they billed, where Type 1 moved 15.1% of revenue. Airflow 3: backfilled newest-first, high-water-mark loads lost 96.56% of a month with every run green; on the default @daily a data-interval load loaded nothing. · [case study](https://basantbhattarai.com.np/work/data-stack-lab/)
 - [lakehouse-lab](https://github.com/technobasant/lakehouse-lab) — Iceberg on MinIO with Apache Polaris vending table-scoped credentials to Trino and StarRocks; dbt + Airflow medallion, compaction and rollback, every figure measured. · [case study](https://basantbhattarai.com.np/work/lakehouse-rag-lab/)
 - [rag-pipeline](https://github.com/technobasant/rag-pipeline) — scrape-to-RAG lakehouse: Airflow, Spark bronze/silver/gold on Delta and MinIO, Chroma, a FastAPI answer service, OpenLineage.
 
@@ -41,15 +41,15 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 - [awslabs/spark-sql-kinesis-connector#99](https://github.com/awslabs/spark-sql-kinesis-connector/pull/99) — an opt-in option to stop reading a shard once it is caught up, requested in the project's issue #11 (in review).
 - [citusdata/citus#7333](https://github.com/citusdata/citus/issues/7333) — a minimal reproduction on Citus 14.2 of node removal leaving cleanup records behind, with the code path; an earlier report of mine, [#4776](https://github.com/citusdata/citus/issues/4776), led to unnamed-constraint support on distributed tables.
 
-**Recent writing** — measured, with the method stated; [all 37 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
+**Recent writing** — measured, with the method stated; [all 38 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
 
+- [On Airflow 3's @daily, an incremental load ran green 30 times and loaded nothing](https://basantbhattarai.com.np/writing/airflow-3-daily-no-data-interval/)
 - [A Type 1 dimension put 15% of a year's revenue on the wrong plan](https://basantbhattarai.com.np/writing/type-1-dimension-revenue-wrong-plan/)
 - [The eval score fell 4.8 points. Twelve answers decided whether it meant anything.](https://basantbhattarai.com.np/writing/eval-score-drop-twelve-answers/)
 - [The agent got 48 of 54 right. Three of the wrong ones published themselves.](https://basantbhattarai.com.np/writing/agent-measured-by-what-it-publishes/)
 - [Validation picked the fraud model that had read the future](https://basantbhattarai.com.np/writing/realtime-ml-point-in-time-leakage/)
 - [Exactly-once held through nine failures. The window counts did not.](https://basantbhattarai.com.np/writing/exactly-once-records-not-window-counts/)
 - [Citus removed the node. Its cleanup records stayed behind.](https://basantbhattarai.com.np/writing/citus-remove-node-orphaned-cleanup-records/)
-- [My canary analysis aborted a good release and promoted a bad one](https://basantbhattarai.com.np/writing/canary-analysis-aborted-good-promoted-bad/)
 
 **Stack**
 
