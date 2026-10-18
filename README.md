@@ -20,6 +20,7 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 
 *AI systems*
 
+- [ai-platform-architecture](https://github.com/technobasant/ai-platform-architecture) — a reference architecture for AI features on governed data: 13 decision records, 12 backed by results measured in these labs, an evaluation gate, an OWASP LLM Top 10 threat model, and a cost model per answer. · [case study](https://basantbhattarai.com.np/work/ai-platform-architecture/)
 - [governed-agent](https://github.com/technobasant/governed-agent) — an AI agent whose output becomes state only after a schema, a policy, a grounding check and, where required, a person: LangGraph + MCP, FastAPI with a PostgreSQL outbox, a Next.js review UI, measured on qwen3:8b. · [case study](https://basantbhattarai.com.np/work/governed-agent/)
 - [evalproof](https://github.com/technobasant/evalproof) — LLM evaluation as measurement: calibrate the judge against a gold sample, correct its pass rate (ACC/PPI), and gate CI only on significant regressions. Local-first with Ollama; ships as a GitHub Action. · [case study](https://basantbhattarai.com.np/work/evalproof/) · [live app](https://evalproof.streamlit.app) · `pip install evalproof`
 - [realtime-ml](https://github.com/technobasant/realtime-ml) — real-time fraud scoring where leakage, training/serving skew and label delay are measured: Feast, LightGBM, MLflow, shadow serving, drift alerts and a paired-statistics promotion gate. · [case study](https://basantbhattarai.com.np/work/realtime-ml/)
@@ -42,15 +43,15 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 - [awslabs/spark-sql-kinesis-connector#99](https://github.com/awslabs/spark-sql-kinesis-connector/pull/99) — an opt-in option to stop reading a shard once it is caught up, requested in the project's issue #11 (in review).
 - [citusdata/citus#7333](https://github.com/citusdata/citus/issues/7333) — a minimal reproduction on Citus 14.2 of node removal leaving cleanup records behind, with the code path; an earlier report of mine, [#4776](https://github.com/citusdata/citus/issues/4776), led to unnamed-constraint support on distributed tables.
 
-**Recent writing** — measured, with the method stated; [all 39 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
+**Recent writing** — measured, with the method stated; [all 40 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
 
+- [What an AI answer costs, and when a GPU of your own pays for itself](https://basantbhattarai.com.np/writing/ai-answer-cost-and-self-hosting/)
 - [Per scan or per hour: the number that decides an analytics bill](https://basantbhattarai.com.np/writing/warehouse-bill-per-scan-or-per-hour/)
 - [On Airflow 3's @daily, an incremental load ran green 30 times and loaded nothing](https://basantbhattarai.com.np/writing/airflow-3-daily-no-data-interval/)
 - [A Type 1 dimension put 15% of a year's revenue on the wrong plan](https://basantbhattarai.com.np/writing/type-1-dimension-revenue-wrong-plan/)
 - [The eval score fell 4.8 points. Twelve answers decided whether it meant anything.](https://basantbhattarai.com.np/writing/eval-score-drop-twelve-answers/)
 - [The agent got 48 of 54 right. Three of the wrong ones published themselves.](https://basantbhattarai.com.np/writing/agent-measured-by-what-it-publishes/)
 - [Validation picked the fraud model that had read the future](https://basantbhattarai.com.np/writing/realtime-ml-point-in-time-leakage/)
-- [Exactly-once held through nine failures. The window counts did not.](https://basantbhattarai.com.np/writing/exactly-once-records-not-window-counts/)
 
 **Stack**
 
