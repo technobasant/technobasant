@@ -14,7 +14,7 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 - [spark-sql-kinesis](https://github.com/technobasant/spark-sql-kinesis) [![Maven Central](https://img.shields.io/maven-central/v/io.github.technobasant/spark-sql-kinesis_2.13?label=maven%20central)](https://central.sonatype.com/artifact/io.github.technobasant/spark-sql-kinesis_2.13) — Kinesis source and sink for Spark 4.2 Structured Streaming on AWS SDK v2. Upgrades in place: the checkpoint format is byte-identical, so no drain. · [case study](https://basantbhattarai.com.np/work/spark-sql-kinesis/)
 - [dataset-registry](https://github.com/technobasant/dataset-registry) — ownership before consumption, as a product: owners, freshness SLOs, versioned JSON Schema contracts, OpenLineage lineage, and breaking changes that wait for consumer acknowledgement. Go, PostgreSQL, Next.js. · [case study](https://basantbhattarai.com.np/work/dataset-registry/)
 - [data-platform-architecture](https://github.com/technobasant/data-platform-architecture) — a reference architecture for a SaaS data platform: 13 decision records, 12 backed by results measured in these labs, with quality targets, runbooks and a cost model for Snowflake, Databricks, BigQuery and an open lakehouse. · [case study](https://basantbhattarai.com.np/work/data-platform-architecture/)
-- [data-stack-lab](https://github.com/technobasant/data-stack-lab) — hands-on data engineering projects, one per tool, on one synthetic SaaS dataset, each checked in CI. dbt: a Type 2 dimension kept all 5,048 invoices on the plan they billed, where Type 1 moved 15.1% of revenue. Airflow 3: backfilled newest-first, high-water-mark loads lost 96.56% of a month with every run green. Data quality: nine injected defects; blocking let 0 of 3,198 bad rows through, and only control totals, volume and per-platform share saw the rows that never arrived. · [case study](https://basantbhattarai.com.np/work/data-stack-lab/)
+- [data-stack-lab](https://github.com/technobasant/data-stack-lab) — hands-on data engineering projects, one per tool, on one synthetic SaaS dataset, each checked in CI. dbt: a Type 2 dimension kept all 5,048 invoices on the plan they billed, where Type 1 moved 15.1% of revenue. Airflow 3: backfilled newest-first, high-water-mark loads lost 96.56% of a month with every run green. Data quality: nine injected defects; blocking let 0 of 3,198 bad rows through, and only control totals, volume and per-platform share saw the rows that never arrived. Spark: re-running one day with the default overwrite mode left 1 of 365 daily partitions. · [case study](https://basantbhattarai.com.np/work/data-stack-lab/)
 - [lakehouse-lab](https://github.com/technobasant/lakehouse-lab) — Iceberg on MinIO with Apache Polaris vending table-scoped credentials to Trino and StarRocks; dbt + Airflow medallion, compaction and rollback, every figure measured. · [case study](https://basantbhattarai.com.np/work/lakehouse-rag-lab/)
 - [rag-pipeline](https://github.com/technobasant/rag-pipeline) — scrape-to-RAG lakehouse: Airflow, Spark bronze/silver/gold on Delta and MinIO, Chroma, a FastAPI answer service, OpenLineage.
 
@@ -43,15 +43,15 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 - [awslabs/spark-sql-kinesis-connector#99](https://github.com/awslabs/spark-sql-kinesis-connector/pull/99) — an opt-in option to stop reading a shard once it is caught up, requested in the project's issue #11 (in review).
 - [citusdata/citus#7333](https://github.com/citusdata/citus/issues/7333) — a minimal reproduction on Citus 14.2 of node removal leaving cleanup records behind, with the code path; an earlier report of mine, [#4776](https://github.com/citusdata/citus/issues/4776), led to unnamed-constraint support on distributed tables.
 
-**Recent writing** — measured, with the method stated; [all 41 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
+**Recent writing** — measured, with the method stated; [all 42 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
 
+- [Re-running one day of a Spark job deleted the other 364](https://basantbhattarai.com.np/writing/spark-rerun-one-day-deleted-the-rest/)
 - [Wrong data and missing data are caught by different checks](https://basantbhattarai.com.np/writing/wrong-data-missing-data-different-checks/)
 - [What an AI answer costs, and when a GPU of your own pays for itself](https://basantbhattarai.com.np/writing/ai-answer-cost-and-self-hosting/)
 - [Per scan or per hour: the number that decides an analytics bill](https://basantbhattarai.com.np/writing/warehouse-bill-per-scan-or-per-hour/)
 - [On Airflow 3's @daily, an incremental load ran green 30 times and loaded nothing](https://basantbhattarai.com.np/writing/airflow-3-daily-no-data-interval/)
 - [A Type 1 dimension put 15% of a year's revenue on the wrong plan](https://basantbhattarai.com.np/writing/type-1-dimension-revenue-wrong-plan/)
 - [The eval score fell 4.8 points. Twelve answers decided whether it meant anything.](https://basantbhattarai.com.np/writing/eval-score-drop-twelve-answers/)
-- [The agent got 48 of 54 right. Three of the wrong ones published themselves.](https://basantbhattarai.com.np/writing/agent-measured-by-what-it-publishes/)
 
 **Stack**
 
