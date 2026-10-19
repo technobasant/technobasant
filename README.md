@@ -43,15 +43,15 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 - [awslabs/spark-sql-kinesis-connector#99](https://github.com/awslabs/spark-sql-kinesis-connector/pull/99) — an opt-in option to stop reading a shard once it is caught up, requested in the project's issue #11 (in review).
 - [citusdata/citus#7333](https://github.com/citusdata/citus/issues/7333) — a minimal reproduction on Citus 14.2 of node removal leaving cleanup records behind, with the code path; an earlier report of mine, [#4776](https://github.com/citusdata/citus/issues/4776), led to unnamed-constraint support on distributed tables.
 
-**Recent writing** — measured, with the method stated; [all 49 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
+**Recent writing** — measured, with the method stated; [all 50 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
 
+- [RDS, Citus, TimescaleDB, ClickHouse, Trino, Iceberg or pgvector: choosing where the data lives](https://basantbhattarai.com.np/writing/choosing-where-the-data-lives/)
 - [Erasing one person rewrote 31.8 million rows. With their e-mail in one table, 60,000.](https://basantbhattarai.com.np/writing/erasure-cost-is-a-modelling-decision/)
 - [The day's work took 38 seconds. The warehouse was billed for 11 minutes.](https://basantbhattarai.com.np/writing/warehouse-billed-for-waiting-to-stop/)
 - [We deleted the user from the Delta table. Time travel still returned all 100 rows.](https://basantbhattarai.com.np/writing/delta-delete-is-not-erasure/)
 - [Told to stay in one customer's data, the models leaked 23 times in 120](https://basantbhattarai.com.np/writing/prompt-is-not-tenant-isolation/)
 - [For text-to-SQL, the definitions mattered more than the model](https://basantbhattarai.com.np/writing/semantic-layer-mattered-more-than-the-model/)
 - [The read replica was meant to take the reports. 3 of 35 finished.](https://basantbhattarai.com.np/writing/read-replica-cancelled-the-reports/)
-- [The producer re-sent the fixed file. COPY INTO never read it.](https://basantbhattarai.com.np/writing/copy-into-never-read-the-corrected-file/)
 
 **Stack**
 
