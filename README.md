@@ -20,7 +20,7 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 
 *AI systems*
 
-- [ai-platform-architecture](https://github.com/technobasant/ai-platform-architecture) — a reference architecture for AI features on governed data: 13 decision records, 12 backed by results measured in these labs, an evaluation gate, an OWASP LLM Top 10 threat model, and a cost model per answer. · [case study](https://basantbhattarai.com.np/work/ai-platform-architecture/)
+- [ai-platform-architecture](https://github.com/technobasant/ai-platform-architecture) — the AI architecture for the same client's usage assistant, text-to-SQL over governed data, measured on Qwen3, Llama 3.3, gpt-oss and Databricks Genie: told to stay in one customer's data, the models leaked on 23 of 120 requests, and run as the customer's database role on none; a semantic layer took Llama 3.3 70B from 55 to 70 of 70. · [case study](https://basantbhattarai.com.np/work/ai-platform-architecture/) · [case study](https://basantbhattarai.com.np/work/ai-platform-architecture/)
 - [governed-agent](https://github.com/technobasant/governed-agent) — an AI agent whose output becomes state only after a schema, a policy, a grounding check and, where required, a person: LangGraph + MCP, FastAPI with a PostgreSQL outbox, a Next.js review UI, measured on qwen3:8b. · [case study](https://basantbhattarai.com.np/work/governed-agent/)
 - [evalproof](https://github.com/technobasant/evalproof) — LLM evaluation as measurement: calibrate the judge against a gold sample, correct its pass rate (ACC/PPI), and gate CI only on significant regressions. Local-first with Ollama; ships as a GitHub Action. · [case study](https://basantbhattarai.com.np/work/evalproof/) · [live app](https://evalproof.streamlit.app) · `pip install evalproof`
 - [realtime-ml](https://github.com/technobasant/realtime-ml) — real-time fraud scoring where leakage, training/serving skew and label delay are measured: Feast, LightGBM, MLflow, shadow serving, drift alerts and a paired-statistics promotion gate. · [case study](https://basantbhattarai.com.np/work/realtime-ml/)
@@ -43,15 +43,15 @@ Senior Data & AI Engineer in Kathmandu, working US and EU hours. Nine years buil
 - [awslabs/spark-sql-kinesis-connector#99](https://github.com/awslabs/spark-sql-kinesis-connector/pull/99) — an opt-in option to stop reading a shard once it is caught up, requested in the project's issue #11 (in review).
 - [citusdata/citus#7333](https://github.com/citusdata/citus/issues/7333) — a minimal reproduction on Citus 14.2 of node removal leaving cleanup records behind, with the code path; an earlier report of mine, [#4776](https://github.com/citusdata/citus/issues/4776), led to unnamed-constraint support on distributed tables.
 
-**Recent writing** — measured, with the method stated; [all 44 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
+**Recent writing** — measured, with the method stated; [all 46 pieces, grouped by subject](https://basantbhattarai.com.np/writing/)
 
+- [Told to stay in one customer's data, the models leaked 23 times in 120](https://basantbhattarai.com.np/writing/prompt-is-not-tenant-isolation/)
+- [For text-to-SQL, the definitions mattered more than the model](https://basantbhattarai.com.np/writing/semantic-layer-mattered-more-than-the-model/)
 - [The read replica was meant to take the reports. 3 of 412 finished.](https://basantbhattarai.com.np/writing/read-replica-cancelled-the-reports/)
 - [The producer re-sent the fixed file. COPY INTO never read it.](https://basantbhattarai.com.np/writing/copy-into-never-read-the-corrected-file/)
 - [Re-running one day of a Spark job deleted the other 364](https://basantbhattarai.com.np/writing/spark-rerun-one-day-deleted-the-rest/)
 - [Wrong data and missing data are caught by different checks](https://basantbhattarai.com.np/writing/wrong-data-missing-data-different-checks/)
 - [What an AI answer costs, and when a GPU of your own pays for itself](https://basantbhattarai.com.np/writing/ai-answer-cost-and-self-hosting/)
-- [Per scan or per hour: the number that decides an analytics bill](https://basantbhattarai.com.np/writing/warehouse-bill-per-scan-or-per-hour/)
-- [On Airflow 3's @daily, an incremental load ran green 30 times and loaded nothing](https://basantbhattarai.com.np/writing/airflow-3-daily-no-data-interval/)
 
 **Stack**
 
