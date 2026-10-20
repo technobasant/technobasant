@@ -13,7 +13,7 @@ Data & AI Architect · Senior Data Engineer in Kathmandu. I design data platform
 - [ai-platform-architecture](https://github.com/technobasant/ai-platform-architecture) — the same client's usage assistant, text-to-SQL over governed data, measured on Qwen3, Llama 3.3, gpt-oss and Databricks Genie: told to stay in one customer's data, the models leaked on 23 of 120 requests; a default-deny query rewrite matched row-level security on every query they wrote and refuses 44 of 44 hand-written escapes; a semantic layer took Llama 3.3 70B from 55 to 70 of 70. · [case study](https://basantbhattarai.com.np/work/ai-platform-architecture/)
 - [Choosing where the data lives](https://basantbhattarai.com.np/writing/choosing-where-the-data-lives/) — the decision guide behind them: RDS, Citus, TimescaleDB, ClickHouse, Trino, Iceberg and pgvector, by workload, with the measurements behind each rule.
 
-**Production use cases** — case studies on the site; clients are not named, and their figures stay with them
+**Production use cases**
 
 *Data platforms*
 
