@@ -2,7 +2,7 @@
 
 Data & AI Architect · Senior Data Engineer in Kathmandu. I design data platforms, the governance around them and the AI on them, then build them: nine years in software, six on production data platforms.
 
-- **Moving analytics off the product's Postgres.** Measure first, stop the damage, then scale out or migrate in stages with a way back. For consulting clients, two single-server Postgres databases, one of them a pgvector store, moved to Citus.
+- **Moving analytics off the product's Postgres.** Measure first, stop the damage, then scale out or migrate in stages with a way back. In production, two single-server Postgres databases, one of them a pgvector store, moved to Citus.
 - **Platforms chosen on evidence and run at scale.** A proof of concept on criteria fixed in advance, then ingestion, lakehouse and serving that stay correct, recoverable and affordable: a 15 TB+ production footprint, 100M+ events a day, 99.9% uptime.
 - **Governance an auditor can check.** Classification, masking, contracts and access review designed into the data model; SOC 2 controls for the platform and its infrastructure; erasure measured, not assumed.
 - **AI on governed data.** LangGraph, Google ADK and MCP agents whose output is typed, evaluated and reviewable before it becomes state, with isolation enforced outside the model. Analytics delivery 60% faster.
@@ -13,18 +13,21 @@ Data & AI Architect · Senior Data Engineer in Kathmandu. I design data platform
 - [ai-platform-architecture](https://github.com/technobasant/ai-platform-architecture) — the same client's usage assistant, text-to-SQL over governed data, measured on Qwen3, Llama 3.3, gpt-oss and Databricks Genie: told to stay in one customer's data, the models leaked on 23 of 120 requests; a default-deny query rewrite matched row-level security on every query they wrote and refuses 44 of 44 hand-written escapes; a semantic layer took Llama 3.3 70B from 55 to 70 of 70. · [case study](https://basantbhattarai.com.np/work/ai-platform-architecture/)
 - [Choosing where the data lives](https://basantbhattarai.com.np/writing/choosing-where-the-data-lives/) — the decision guide behind them: RDS, Citus, TimescaleDB, ClickHouse, Trino, Iceberg and pgvector, by workload, with the measurements behind each rule.
 
-**Production and consulting work** — case studies on the site; clients are not named, and their figures stay with them
+**Production use cases** — case studies on the site; clients are not named, and their figures stay with them
 
-*Production, at UXCam*
+*Data platforms*
 
 - [Rebuilding a production data platform for scale and recovery](https://basantbhattarai.com.np/work/data-platform-practice/) — six years on one platform: faster processing, lower cost, safer change, and recovery designed before the incident.
-- [Turning model output into product state you can audit](https://basantbhattarai.com.np/work/governed-ai-delivery/) — a governed analytics workflow with typed state, provenance, evaluation, review and an honest fallback path.
-
-*Consulting*
-
 - [An analytics lakehouse for a contact-centre platform](https://basantbhattarai.com.np/work/contact-centre-lakehouse/) — S3, Trino, Airflow and AWS Glue, delivered configured, with security, access control, HA and DR.
+
+*Databases*
+
 - [Two Postgres servers that ran out of room, moved to Citus](https://basantbhattarai.com.np/work/postgres-scale-out-citus/) — an application database and a pgvector store, scaled out with the data model doing most of the work.
 - [Managed or self-run PostgreSQL](https://basantbhattarai.com.np/work/postgres-on-rds/) — a capacity plan and a fleet of RDS and Aurora databases, tuned and failover-tested; the same rule decided both.
+
+*AI systems*
+
+- [Turning model output into product state you can audit](https://basantbhattarai.com.np/work/governed-ai-delivery/) — a governed analytics workflow with typed state, provenance, evaluation, review and an honest fallback path.
 - [Short-text classification and alerting for a lakehouse team](https://basantbhattarai.com.np/work/consulting-short-text-and-alerting/) — a classifier that failed in production, rebuilt around the unit of work, on Databricks.
 
 **Open source** — each with its method and measurements in the repository; case studies, grouped the same way, at [basantbhattarai.com.np/work](https://basantbhattarai.com.np/work/)
